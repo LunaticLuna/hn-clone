@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { fetchMainPosts } from '../utils/api'
-import PostCard from './PostCard'
+import PostList from './PostList'
 
 export default class Posts extends React.Component{
   state = {
@@ -24,24 +24,9 @@ export default class Posts extends React.Component{
   }
   render(){
     const { posts } = this.state
-    // const date = new Date(timestamp).toDateString();
-    console.log(posts)
+
     return (
-      <ul>
-        {posts.map((post)=>(
-          <li key = {post.id}>
-            <PostCard
-              title = {post.title}
-              url = {post.url}
-              author = {post.by}
-              timestamp = {post.time}
-              commentNums = {post.descendants}
-              comments = {post.kids}
-            />
-          </li>
-          
-          ))}
-      </ul>
+      <PostList posts = {posts} />
 
     )
   }
