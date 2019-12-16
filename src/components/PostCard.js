@@ -8,15 +8,13 @@ export default class PostCard extends React.Component{
     return (
       <React.Fragment>
         <div className = 'title'>
-          <a href = {url}
-              > 
+          <a href = {url}> 
             {title}
           </a>
         </div>
         <div className = 'meta-info'>
           <span>
-            By
-            <Link className = 'meta-info-link' to = {`/user?id=${author}`} >
+            By <Link className = 'meta-info-link' to = {`/user?id=${author}`} >
               {author}
             </Link>
           </span>
@@ -24,10 +22,9 @@ export default class PostCard extends React.Component{
             on {date}
           </span>
           <span>
-            with 
-            <Link className = 'meta-info-link' to = {`/post?id=${id}`} >
+            with <Link className = 'meta-info-link' to = {`/post?id=${id}`} >
               {commentNums}
-            </Link>comments
+            </Link> comments
           </span>
         </div>
       </React.Fragment>

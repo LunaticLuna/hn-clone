@@ -1,3 +1,4 @@
+
 import React from 'react'
 import ReactDom from 'react-dom'
 import Posts from './components/Posts'
@@ -13,11 +14,13 @@ class App extends React.Component{
   render(){
     return (
       <Router>
-        <Nav />
-        <Route path = '/' exact render = {()=><Posts type = 'top' />} />
-        <Route path = '/new'  render = {()=><Posts type = 'new' />} />
-        <Route path = '/user' component = {User} />
-        <Route path = '/post' component = {PostPage} />
+        <div>
+          <Nav />
+          <Route path = '/' exact render = {()=><Posts type = 'top' />} />
+          <Route path = '/new'  render = {()=><Posts type = 'new' />} />
+          <Route path = '/user' component = {User} />
+          <Route path = '/post' component = {PostPage} />
+        </div>
       </Router>
 
 

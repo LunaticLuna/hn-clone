@@ -45,7 +45,7 @@ li {
   margin-right:5px;
 }
 .meta-info-link{
-  margin: 5px;
+  /*margin: 5px;*/
   color: black;
 
 }
@@ -62,4 +62,10 @@ li {
 }
 .user-info h1{
   margin-bottom:0;
+}
+.comment{
+  padding:5px 0 5px 10px ;
+  margin:10px 0;
+  background: rgba(128, 128, 128, 0.1411764705882353);
+  border-radius: 5px;
 }
