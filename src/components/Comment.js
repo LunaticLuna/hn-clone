@@ -5,8 +5,7 @@ export default class Comment extends React.Component{
     comment:this.props.comment
   }
   render(){
-    const { by, text, time} = this.state.comment
-    const date = new Date(time*1000).toDateString()
+    const { by, text} = this.state.comment
     return(
       <React.Fragment>
         <div className = 'meta-info'>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default class PostCard extends React.Component{
   render(){
-    const { id, title, url, author, timestamp, commentNums, comments } = this.props 
+    const { id, title, url, author, timestamp, commentNums } = this.props 
     const date = new Date(timestamp*1000).toDateString();
     return (
       <React.Fragment>

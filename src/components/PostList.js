@@ -15,7 +15,6 @@ export default function PostList({ posts }){
             author = {post.by}
             timestamp = {post.time}
             commentNums = {post.descendants}
-            comments = {post.kids}
           />
         </li>
         
